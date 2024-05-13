@@ -1,0 +1,11 @@
+<h3>IsAuthenticated</h3>
+<div>
+    {{ isAuthenticated }}
+</div>
+<h3>UserData</h3>
+<div>
+    <p>Name = {{ userData.email }}</p>
+    {{ userData | json }}
+</div>
+
+<button (click)="logout()">Log out</button>
